@@ -1,107 +1,54 @@
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 100, 0, 100)
-frame.Position = UDim2.new(0, 383, 0, 96)
-frame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-frame.Parent = game.Players.LocalPlayer.PlayerGui
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
 
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 100, 0, 100)
-frame.Position = UDim2.new(0, 488, 0, 385)
-frame.BackgroundColor3 = Color3.fromRGB(66, 66, 66)
-frame.Parent = game.Players.LocalPlayer.PlayerGui
+-- Create a ScreenGui to hold all UI elements
+local screenGui = Instance.new("ScreenGui")
+screenGui.Name = "CustomUI"
+screenGui.Parent = playerGui
 
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 100, 0, 100)
-frame.Position = UDim2.new(0, 72, 0, 395)
-frame.BackgroundColor3 = Color3.fromRGB(84, 84, 84)
-frame.Parent = game.Players.LocalPlayer.PlayerGui
+-- Function to create a frame
+local function createFrame(size, position, color)
+    local frame = Instance.new("Frame")
+    frame.Size = size
+    frame.Position = position
+    frame.BackgroundColor3 = color
+    frame.Parent = screenGui
+    return frame
+end
 
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0, 100, 0, 100)
-frame.Position = UDim2.new(0, 558, 0, 149)
-frame.BackgroundColor3 = Color3.fromRGB(82, 82, 82)
-frame.Parent = game.Players.LocalPlayer.PlayerGui
+-- Function to create a button
+local function createButton(size, position, text)
+    local button = Instance.new("TextButton")
+    button.Size = size
+    button.Position = position
+    button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+    button.Text = text
+    button.Parent = screenGui
 
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 285, 0, 15)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
+    -- Example button functionality
+    button.MouseButton1Click:Connect(function()
+        print("Button clicked at position:", position.X.Scale, position.Y.Scale)
+    end)
 
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 34, 0, 414)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
+    return button
+end
 
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 606, 0, 332)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
+-- Creating frames
+createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 383, 0, 96), Color3.fromRGB(0, 0, 0))
+createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 488, 0, 385), Color3.fromRGB(66, 66, 66))
+createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 72, 0, 395), Color3.fromRGB(84, 84, 84))
+createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 558, 0, 149), Color3.fromRGB(82, 82, 82))
 
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 419, 0, 250)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 301, 0, 163)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 430, 0, 393)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 273, 0, 4)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 556, 0, 254)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 634, 0, 445)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 176, 0, 326)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 491, 0, 440)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
-
-local button = Instance.new("TextButton")
-button.Size = UDim2.new(0, 100, 0, 50)
-button.Position = UDim2.new(0, 473, 0, 377)
-button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button.Text = "Click Me"
-button.Parent = game.Players.LocalPlayer.PlayerGui
+-- Creating buttons
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 285, 0, 15), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 34, 0, 414), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 606, 0, 332), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 419, 0, 250), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 301, 0, 163), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 430, 0, 393), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 273, 0, 4), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 556, 0, 254), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 634, 0, 445), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 176, 0, 326), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 491, 0, 440), "Click Me")
+createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 473, 0, 377), "Click Me")
