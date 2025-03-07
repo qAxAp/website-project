@@ -1,3 +1,4 @@
+
 local player = game.Players.LocalPlayer
 local playerGui = player:WaitForChild("PlayerGui")
 
@@ -5,31 +6,19 @@ local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = playerGui
 
 local frame1 = Instance.new("Frame")
-frame1.Size = UDim2.new(0.4265402843601896, 0, 0.518, 0)
-frame1.Position = UDim2.new(0.3593996840442338, 0, 0.25, 0)
-frame1.BackgroundColor3 = Color3.new(0.141, 0.141, 0.141)
+frame1.Size = UDim2.new(0.45666356011183595, 0, 0.472, 0)
+frame1.Position = UDim2.new(0.24976700838769805, 0, 0.258, 0)
+frame1.BackgroundColor3 = Color3.new(0.000, 0.000, 0.000)
 frame1.Parent = screenGui
 
 local frame2 = Instance.new("Frame")
-frame2.Size = UDim2.new(0.10979462875197472, 0, 0.472, 0)
-frame2.Position = UDim2.new(0.3665086887835703, 0, 0.276, 0)
-frame2.BackgroundColor3 = Color3.new(1.000, 0.000, 0.435)
+frame2.Size = UDim2.new(0.11276794035414725, 0, 0.41, 0)
+frame2.Position = UDim2.new(0.2590866728797763, 0, 0.29, 0)
+frame2.BackgroundColor3 = Color3.new(0.051, 0.290, 0.549)
 frame2.Parent = screenGui
 
 local frame3 = Instance.new("Frame")
-frame3.Size = UDim2.new(0.2883096366508689, 0, 0.462, 0)
-frame3.Position = UDim2.new(0.4873617693522907, 0, 0.28, 0)
-frame3.BackgroundColor3 = Color3.new(1.000, 0.000, 0.435)
+frame3.Size = UDim2.new(0.31127679403541475, 0, 0.4, 0)
+frame3.Position = UDim2.new(0.3821062441752097, 0, 0.294, 0)
+frame3.BackgroundColor3 = Color3.new(0.106, 0.314, 0.533)
 frame3.Parent = screenGui
-
-local frame4 = Instance.new("Frame")
-frame4.Size = UDim2.new(0.4273301737756714, 0, 0.074, 0)
-frame4.Position = UDim2.new(0.3593996840442338, 0, 0.178, 0)
-frame4.BackgroundColor3 = Color3.new(1.000, 0.000, 0.435)
-frame4.Parent = screenGui
-
-local frame5 = Instance.new("Frame")
-frame5.Size = UDim2.new(0.13191153238546605, 0, 0.07, 0)
-frame5.Position = UDim2.new(0.3593996840442338, 0, 0.18, 0)
-frame5.BackgroundColor3 = Color3.new(1.000, 0.000, 0.435)
-frame5.Parent = screenGui
