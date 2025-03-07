@@ -33,3 +33,15 @@ button2.Size = UDim2.new(0.061611374407582936, 0, 0.068, 0)
 button2.Position = UDim2.new(0.5102685624012638, 0, 0.262, 0)
 button2.BackgroundColor3 = Color3.new(0.000, 0.482, 1.000)
 button2.Parent = screenGui
+
+local frame4 = Instance.new("Frame")
+frame4.Size = UDim2.new(0.4304897314375987, 0, 0.064, 0)
+frame4.Position = UDim2.new(0.3278041074249605, 0, 0.172, 0)
+frame4.BackgroundColor3 = Color3.new(0.016, 0.016, 0.016)
+frame4.Parent = screenGui
+
+local textbox1 = Instance.new("TextBox")
+textbox1.Size = UDim2.new(0.12164296998420221, 0, 0.064, 0)
+textbox1.Position = UDim2.new(0.3278041074249605, 0, 0.172, 0)
+textbox1.BackgroundColor3 = Color3.new(0.016, 0.016, 0.016)
+textbox1.Parent = screenGui
