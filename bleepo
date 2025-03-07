@@ -4,12 +4,14 @@ local playerGui = player:WaitForChild("PlayerGui")
 local screenGui = Instance.new("ScreenGui")
 screenGui.Parent = playerGui
 
-local frame1 = Instance.new("Frame")
-frame1.Size = UDim2.new(0.5213270142180095, 0, 0.578, 0)
-frame1.Position = UDim2.new(0.21879936808846762, 0, 0.144, 0)
-frame1.Parent = screenGui
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.4415481832543444, 0, 0.558, 0)
+frame.Position = UDim2.new(0.3009478672985782, 0, 0.268, 0)
+frame.BackgroundColor3 = Color3.new(0.000, 0.482, 1.000)
+frame.Parent = screenGui
 
-local frame2 = Instance.new("Frame")
-frame2.Size = UDim2.new(0.5015797788309637, 0, 0.536, 0)
-frame2.Position = UDim2.new(0.2282780410742496, 0, 0.168, 0)
-frame2.Parent = screenGui
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.42417061611374407, 0, 0.516, 0)
+frame.Position = UDim2.new(0.3104265402843602, 0, 0.288, 0)
+frame.BackgroundColor3 = Color3.new(0.000, 0.482, 1.000)
+frame.Parent = screenGui
