@@ -1,14 +1,9 @@
-local screenGui = Instance.new("ScreenGui")
-screenGui.Parent = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
-local frame1 = Instance.new("Frame")
-frame1.Size = UDim2.new(0.07898894154818326, 0, 0.2, 0)
-frame1.Position = UDim2.new(0.5829514949161366, 0, 0.451427802732724, 0)
-frame1.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-frame1.Parent = screenGui
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.5032, 637, 0.5980, 299)
+frame.Position = UDim2.new(0.2765, 350, 0.0820, 41)
+frame.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 
-local button1 = Instance.new("TextButton")
-button1.Text = "Click Me"
-button1.Size = UDim2.new(0.07898894154818326, 0, 0.1, 0)
-button1.Position = UDim2.new(0.034603289212836855, 0, 0.28221013681666246, 0)
-button1.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-button1.Parent = screenGui
+local frame = Instance.new("Frame")
+frame.Size = UDim2.new(0.4803, 608, 0.5480, 274)
+frame.Position = UDim2.new(0.2875, 364, 0.1080, 54)
+frame.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
