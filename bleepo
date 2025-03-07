@@ -1,54 +1,14 @@
-local player = game.Players.LocalPlayer
-local playerGui = player:WaitForChild("PlayerGui")
-
--- Create a ScreenGui to hold all UI elements
 local screenGui = Instance.new("ScreenGui")
-screenGui.Name = "CustomUI"
-screenGui.Parent = playerGui
+screenGui.Parent = game.Players.LocalPlayer:FindFirstChild("PlayerGui")
+local frame1 = Instance.new("Frame")
+frame1.Size = UDim2.new(0.07898894154818326, 0, 0.2, 0)
+frame1.Position = UDim2.new(0.5196364978685579, 0, 0.2770479820420547, 0)
+frame1.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+frame1.Parent = screenGui
 
--- Function to create a frame
-local function createFrame(size, position, color)
-    local frame = Instance.new("Frame")
-    frame.Size = size
-    frame.Position = position
-    frame.BackgroundColor3 = color
-    frame.Parent = screenGui
-    return frame
-end
-
--- Function to create a button
-local function createButton(size, position, text)
-    local button = Instance.new("TextButton")
-    button.Size = size
-    button.Position = position
-    button.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
-    button.Text = text
-    button.Parent = screenGui
-
-    -- Example button functionality
-    button.MouseButton1Click:Connect(function()
-        print("Button clicked at position:", position.X.Scale, position.Y.Scale)
-    end)
-
-    return button
-end
-
--- Creating frames
-createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 383, 0, 96), Color3.fromRGB(0, 0, 0))
-createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 488, 0, 385), Color3.fromRGB(66, 66, 66))
-createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 72, 0, 395), Color3.fromRGB(84, 84, 84))
-createFrame(UDim2.new(0, 100, 0, 100), UDim2.new(0, 558, 0, 149), Color3.fromRGB(82, 82, 82))
-
--- Creating buttons
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 285, 0, 15), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 34, 0, 414), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 606, 0, 332), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 419, 0, 250), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 301, 0, 163), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 430, 0, 393), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 273, 0, 4), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 556, 0, 254), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 634, 0, 445), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 176, 0, 326), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 491, 0, 440), "Click Me")
-createButton(UDim2.new(0, 100, 0, 50), UDim2.new(0, 473, 0, 377), "Click Me")
+local button1 = Instance.new("TextButton")
+button1.Text = "Click Me"
+button1.Size = UDim2.new(0.07898894154818326, 0, 0.1, 0)
+button1.Position = UDim2.new(0.6275146726460225, 0, 0.7060718622947825, 0)
+button1.BackgroundColor3 = Color3.fromRGB(0, 123, 255)
+button1.Parent = screenGui
