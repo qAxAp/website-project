@@ -10,8 +10,8 @@ frame.Position = UDim2.new(0.3009478672985782, 0, 0.268, 0)
 frame.BackgroundColor3 = Color3.new(0.000, 0.482, 1.000)
 frame.Parent = screenGui
 
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0.42417061611374407, 0, 0.516, 0)
-frame.Position = UDim2.new(0.3104265402843602, 0, 0.288, 0)
-frame.BackgroundColor3 = Color3.new(0.000, 0.482, 1.000)
-frame.Parent = screenGui
+local frame2 = Instance.new("Frame")
+frame2.Size = UDim2.new(0.42417061611374407, 0, 0.516, 0)
+frame2.Position = UDim2.new(0.3104265402843602, 0, 0.288, 0)
+frame2.BackgroundColor3 = Color3.new(0.000, 0.482, 1.000)
+frame2.Parent = screenGui
