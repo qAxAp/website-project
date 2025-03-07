@@ -1,9 +1,15 @@
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0.5032, 637, 0.5980, 299)
-frame.Position = UDim2.new(0.2765, 350, 0.0820, 41)
-frame.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local player = game.Players.LocalPlayer
+local playerGui = player:WaitForChild("PlayerGui")
 
-local frame = Instance.new("Frame")
-frame.Size = UDim2.new(0.4803, 608, 0.5480, 274)
-frame.Position = UDim2.new(0.2875, 364, 0.1080, 54)
-frame.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+local screenGui = Instance.new("ScreenGui")
+screenGui.Parent = playerGui
+
+local frame1 = Instance.new("Frame")
+frame1.Size = UDim2.new(0.5213270142180095, 0, 0.578, 0)
+frame1.Position = UDim2.new(0.21879936808846762, 0, 0.144, 0)
+frame1.Parent = screenGui
+
+local frame2 = Instance.new("Frame")
+frame2.Size = UDim2.new(0.5015797788309637, 0, 0.536, 0)
+frame2.Position = UDim2.new(0.2282780410742496, 0, 0.168, 0)
+frame2.Parent = screenGui
